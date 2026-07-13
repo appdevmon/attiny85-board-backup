@@ -1,4 +1,4 @@
-🌐 **Language / Dil:** 🇬🇧 [English](README.md) | 🇹🇷 [Turkish](README.tr.md)
+### 🌐 Language / Dil: &nbsp; 🇬🇧 [English](README.md) &nbsp; | &nbsp; 🇹🇷 [Turkish](README.tr.md)
 
 ---
 
