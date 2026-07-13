@@ -29,4 +29,4 @@ Arduino geliştirme ortamınızı doğrudan bu güvenilir yedek sunucuya yönlen
 2. **Dosya** ➡️ **Tercihler** (Preferences) yolunu izleyin.
 3. **Ek Kart Yöneticisi URL'leri** (Additional Boards Manager URLs) metin alanına aşağıdaki doğrudan bağlantıyı yapıştırın:
    ```text
-   [https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json](https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json)
+   https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json
