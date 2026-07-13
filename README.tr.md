@@ -7,7 +7,7 @@
 Bu depo, ATtiny85 ve ilgili geliştirme kartları için Digistump Arduino Kart Yöneticisi (Board Manager) yapılandırmasının kalıcı, bağımsız bir kopyasını barındırır.
 
 ### ❓ Bu Depo Neden Var?
-Orijinal Digistump altyapısı ve buna bağlı harici dosya sunucuları (örneğin `arduino.esp8266.com`), zamanla bağlantı çürümesine (**link rot**) uğramıştır. Derleyici araç zincirlerine (toolchains), cihaz ikili dosyalarına ve çekirdek tanımlarına işaret eden orijinal bağlantıların birçoğu artık `404 Bulunamadı` hatası vermekte ve bu durum kartların Arduino IDE üzerinden kurulmasını engellemektedir.
+Orijinal Digistump altyapısı ve buna bağlı harici dosya sunucuları (örneğin `arduino.esp8266.com`), zamanla bağlantı çürümesine (**link rot**) uğramıştır. Derleyici araç zincirlerine (toolchains), cihaz ikili dosyalarına ve çekirdek tanımlarına işaret eden orijinal bağlantıların birçoğu artık `404 Not Found` hatası vermekte ve bu durum kartların Arduino IDE üzerinden kurulmasını engellemektedir.
 
 Bu yedek deposu, gerekli olan **45 adet çekirdek arşiv dosyasının tamamını** doğrudan GitHub Release varlıkları (Assets) olarak yerel olarak barındırıp yamalanmış bir `package_digistump_index.json` dosyası sunarak sorunu tamamen çözer.
 
