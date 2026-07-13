@@ -29,4 +29,4 @@ To point your native environment directly to this reliable mirror fallback:
 2. Navigate to **File** ➡️ **Preferences**.
 3. Locate the **Additional Boards Manager URLs** input field and paste the following raw manifest link:
    ```text
-   https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json](https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json
+   https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json
