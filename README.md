@@ -1,24 +1,32 @@
-# Digistump / ATtiny85 Board Manager Backup
+🌐 **Language / Dil:** 🇬🇧 [English](README.md) | 🇹🇷 [Turkish](README.tr.md)
 
-This repository serves as a permanent, self-hosted backup of the Digistump Arduino Board Manager configuration for ATtiny85 and related boards. 
+---
 
-### Why does this exist?
-The original Digistump infrastructure and associated file servers (like `arduino.esp8266.com`) have been suffering from link rot. Many of the original URLs pointing to compiler toolchains and core files now return 404 errors, making it impossible to install the Digistump boards via the Arduino IDE's native board manager.
+# 🛠️ Digistump / ATtiny85 Board Manager Backup
 
-This repository fixes that by hosting all 45 required archive files locally as GitHub Release Assets and providing a patched `package_digistump_index.json` that points to these surviving files.
+This repository serves as a permanent, self-hosted backup of the Digistump Arduino Board Manager configuration for ATtiny85 and related developer hardware. 
 
-### How to Use
+### ❓ Why does this exist?
+The original Digistump infrastructure and associated downstream file servers (such as `arduino.esp8266.com`) have fallen victim to severe **link rot**. Many of the original hardcoded URLs pointing to compiler toolchains, device binaries, and core definitions now return `404 Not Found` errors. This breaks the installation chain inside the Arduino IDE's native board manager.
 
-To install the Digistump boards in your Arduino IDE using this backup:
+This archive completely resolves the issue by hosting all **45 required core archives** locally as secure GitHub Release Assets, paired with a patched, self-referencing `package_digistump_index.json`.
 
-1. Open the Arduino IDE.
-2. Go to **File** > **Preferences**.
-3. In the "Additional Boards Manager URLs" field, paste the following Raw JSON link:
-   https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json
-4. Click **OK**.
-5. Go to **Tools** > **Board** > **Boards Manager...**
-6. Search for `Digistump` and click **Install**.
+---
 
-### What is included?
-* A patched `package_digistump_index.json`.
-* All required `.zip`, `.tar.gz`, and `.tar.bz2` dependencies hosted safely under the Releases tab.
+### 🚀 How to Use
+
+#### 🔌 1. Driver Installation (Windows Only)
+If you are running Windows, your operating system requires low-level USB filters to communicate with the ATtiny85 micronucleus bootloader during compilation and flash routines:
+
+1. Head over to the **Releases** tab of this repository.
+2. Download [📦 Digistump.Drivers.zip](https://github.com/appdevmon/attiny85-board-backup/releases/download/v1.0/Digistump.Drivers.zip).
+3. Extract the contents completely and execute `Install Drivers.exe` (or your corresponding installer application) to register the device handles.
+
+#### ⚙️ 2. Arduino IDE Environment Setup
+To point your native environment directly to this reliable mirror fallback:
+
+1. Fire up your **Arduino IDE**.
+2. Navigate to **File** ➡️ **Preferences**.
+3. Locate the **Additional Boards Manager URLs** input field and paste the following raw manifest link:
+   ```text
+   [https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json](https://raw.githubusercontent.com/appdevmon/attiny85-board-backup/main/package_digistump_index.json)
